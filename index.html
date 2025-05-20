@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mein Preisvergleich</title>
+
+  <!-- Material UI CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/@mui/material@5.10.1/dist/material.min.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    body {
+      padding: 20px;
+    }
+  </style>
+  <!-- Navigation -->
+<nav class="navbar navbar-expand navbar-custom p-3 justify-content-center">
+  <div class="nav-items">
+    <a class="nav-link custom-link" href="index.html">Home</a>
+    <a class="nav-link custom-link" href="produkte.html">Produkte</a>
+    <a class="nav-link custom-link" href="kataloge.html">Kataloge</a>
+    <a class="nav-link custom-link" href="vergleichen.html">Vergleich</a>
+  </div>
+</nav>
+
+<style>
+  /* Hintergrundfarbe der Navbar */
+  .navbar-custom {
+    background-color: #4CAF50; /* z.B. ein dunkleres Grün */
+  }
+
+  /* Links anpassen */
+  .custom-link {
+    color: white !important;
+    font-weight: bold;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+
+  /* Hover-Effekt */
+  .custom-link:hover {
+    color: #FFD700 !important; /* z.B. goldgelb beim Hover */
+    text-decoration: underline;
+  }
+
+  /* Optional: Zentrierung für alle Link-Elemente */
+  .nav-items {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+</style>
+
+</head>
+
+<body>
+    <div style="margin-left: 250px; padding: 20px;">
+        <h1 style="color: #c0d219;">Lebensmittel Preisvergleich</h1>
+        <p>Finde die besten Preise in deinem Supermarkt!</p>
+<header class="mb-4">
+  <!-- Hier wird später die AppBar (Navigation) eingefügt -->
+  <div class="form-group">
+    <label for="suche"></label>
+    <input type="text" class="form-control" id="suche" placeholder="Suche nach einem Produkt...">
+  </div>
+</header>
+
+<main>
+  <div style="max-width: 1200px; margin: 0 auto; padding: 1rem;">
+    <ul class="list-unstyled">
+    <!-- Milchprodukte -->
+    <li class="media mb-4">
+     
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">🥛 Milchprodukte</h5>
+      
+        <!-- Flex-Container für Karten -->
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          
+          <!-- Karte 1 -->
+          <div class="card" style="width: 18rem;">
+            <img src="Weihenstephan_H_Milch_1_Fett_1035681786.png" class="card-img-top" alt="Milch">
+            <div class="card-body">
+              <h5 class="card-title">Milch 1L</h5>
+              <p class="card-text">Weihenstephan</p>
+              <p class="card-text">1,89€</p>
+              <p class="card-text">Erhältlich bei: Rewe</p>
+            </div>
+          </div>
+      
+          <!-- Karte 2 -->
+          <div class="card" style="width: 18rem;">
+            <img src="23183392_digital-image.avif" class="card-img-top" alt="Joghurt">
+            <div class="card-body">
+              <h5 class="card-title">Joghurt 150g</h5>
+              <p class="card-text">Ja</p>
+              <p class="card-text">0,49€</p>
+              <p class="card-text">Erhältlich bei: Rewe</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="71vfV4IW32L.jpg" class="card-img-top" alt="Butter">
+            <div class="card-body">
+              <h5 class="card-title">Butter 250g</h5>
+              <p class="card-text">Weihenstephan</p>
+              <p class="card-text">2,89€</p>
+              <p class="card-text">Erhältlich bei: Lidl</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  
+    <!-- Grundnahrungsmittel -->
+    <li class="media mb-4">
+    
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">🍞 Grundnahrungsmittel</h5>
+                <!-- Flex-Container für Karten -->
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <!-- Karte 1 -->
+        <div class="card" style="width: 18rem;">
+          <img src="gut-guenstig-parboiled-reis-10-kg-4311596479696-1477854008.jpg" class="card-img-top" alt="Reis">
+          <div class="card-body">
+            <h5 class="card-title">Reis</h5>
+            <p class="card-text">Gut und Günstig</p>
+            <p class="card-text">2,94€</p>
+            <p class="card-text">Erhältlich bei: Edeka</p>
+          </div>
+        </div>
+    
+        <!-- Karte 2 -->
+        <div class="card" style="width: 18rem;">
+          <img src="5_Product.jpg" class="card-img-top" alt="Nudeln">
+          <div class="card-body">
+            <h5 class="card-title">Nudeln</h5>
+            <p class="card-text">Barilla</p>
+            <p class="card-text">1,09€</p>
+            <p class="card-text">Erhältlich bei: Rewe, Edeka, Lidl usw.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="4503090234_4009233003907_01.jpg" class="card-img-top" alt="Pizza">
+          <div class="card-body">
+            <h5 class="card-title">Pizza</h5>
+            <p class="card-text">Wagner</p>
+            <p class="card-text">2,50€</p>
+            <p class="card-text">Erhältlich bei: Aldi, Lidl, Edeka</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </li>
+  
+    <!-- Getränke -->
+    <li class="media mb-4">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">🥤 Getränke</h5>
+    
+        <!-- Flex-Container für Karten -->
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          
+          <!-- Karte 1 -->
+          <div class="card" style="width: 18rem;">
+            <img src="Download.jfif" class="card-img-top" alt="Wasser">
+            <div class="card-body">
+              <h5 class="card-title">Wasser</h5>
+              <p class="card-text">Volvic</p>
+              <p class="card-text">2,99€</p>
+              <p class="card-text">Erhältlich bei: Edeka, Rewe</p>
+            </div>
+          </div>
+    
+          <!-- Karte 2 -->
+          <div class="card" style="width: 18rem;">
+            <img src="Apfelsaft_Ja.jpg" class="card-img-top" alt="Saft">
+            <div class="card-body">
+              <h5 class="card-title">Apfelsaft</h5>
+              <p class="card-text">Ja</p>
+              <p class="card-text">0,99€</p>
+              <p class="card-text">Erhältlich bei: Rewe</p>
+            </div>
+          </div>
+    
+          <!-- Karte 3 -->
+          <div class="card" style="width: 18rem;">
+            <img src="Cola-150cl-1.jpg" class="card-img-top" alt="Coca-Cola">
+            <div class="card-body">
+              <h5 class="card-title">Coca-Cola</h5>
+              <p class="card-text">1,99€</p>
+              <p class="card-text">Erhältlich bei: Aldi, Lidl, Edeka</p>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </li>
+  </div>
+</main>
+
+<footer class="mt-5">
+  <!-- Hier wird später das Footer-Element eingefügt -->
+</footer>
+
+</body>
+</html>
